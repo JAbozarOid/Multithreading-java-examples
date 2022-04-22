@@ -39,7 +39,7 @@ public class FirstMultithreadingProgram extends Thread {
 	
 	@Override
 	public void run() {
-		System.out.println("I'm a new thread! My name is " + Thread.currentThread().getName());
+		System.out.println("I'm a new thread! My name is from override run method" + Thread.currentThread().getName());
 	}
 
 }

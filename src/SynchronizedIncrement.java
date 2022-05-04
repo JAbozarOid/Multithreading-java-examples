@@ -29,4 +29,12 @@ public class SynchronizedIncrement {
 	private synchronized static void increment() {
 		counter++;
 	}
+	
+	// this is part of multi threading optimization
+	private static void incrementWithSyncBlock() {
+		synchronized (SynchronizedIncrement.class) {
+			counter++;
+		}
+		
+	}
 }
